@@ -13,8 +13,7 @@ export default class VideoHeader extends Component{
         return (
                 <div className="video-header-con">
                   <div className="video-con">
-                    <div onClick={openVideo} className="video-play"></div>
-                    <video playsInline autoPlay={true} muted={true} loop={true} muted  src="./video/spring-loop.mp4" placeholder="./img/spring-loop.jpg"></video>
+                  <img src="img/spring-loop.jpg" style="width: 100%; height: auto; display: block;"></img>
                   </div>
                   <div className="header-intro">
                     <div className="header-title">Great British Dogs</div>
