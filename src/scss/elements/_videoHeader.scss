@@ -1,0 +1,155 @@
+.video-header-con{
+  position:fixed;
+  // width:500px;
+  width:40vw;
+  height:calc(100vh - 50px);
+  background:$theme-sub-colour;
+  float:left;
+  top: 64px;
+  max-width: 480px;
+
+  @include small-desktop{
+    border-bottom-right-radius: 0px;
+  }
+
+  @include tablet{
+    top: 50px;
+    position:relative;
+    height:auto;
+    width:100%;
+    top:0px;
+    border-bottom-right-radius: 30px;
+    max-width: none;
+  }
+}
+
+.video-con{
+  position: relative;
+  width:100%;
+  overflow:hidden;
+  max-height: 480px;
+  max-width:480px;
+  background-color:#000;
+  height: 60%;
+
+  @include tablet{
+    max-height: 90vw;
+    max-width: none;
+    height:calc(70vh - 50px);
+  }
+
+}
+
+.video-play{
+  background-image: url('../images/video-play.png');
+  z-index: 99999;
+  width: 205px;
+  height: 117px;
+  position: absolute;
+  background-size: contain;
+  margin: auto;
+  display: block;
+  left: 0;
+  right: 0;
+  top: calc(50% - 55px);
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+video{
+  width:100%;
+  background:#000;
+}
+
+.header-intro{
+  height:30vh;
+  background-color: $theme-sub-colour;
+  padding:40px;
+
+  @include small-desktop{
+    padding: 3vw;
+    border-bottom-right-radius:0px;
+  }
+
+  @include tablet{
+    height:auto;
+    max-width: 95%;
+    padding: 6vw;
+    margin: auto;
+    border-bottom-right-radius: 30px;
+  }
+
+  @include mobile{
+    max-width: 100%;
+  }
+}
+
+.header-continue-arrow{
+  position:absolute;
+  width: 40px;
+  height: 40px;
+  background:$theme-sub-colour;
+  transform: rotate(45deg);
+  border-radius: 3px;
+  bottom:10%;
+  bottom: 10vh;
+  left:455px;
+  z-index: -1;
+  
+  @include small-desktop{
+    width: 2.8vw;
+    height: 2.8vw;
+    left: 38.5vw;
+  }
+
+  @include tablet{
+    left:0;
+    right:0;
+    margin:auto;
+    width: 5vw;
+    height: 5vw;
+    bottom: -2vw;
+  }
+
+}
+
+.header-title{
+  font-family: Tinos;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: left;
+  margin: auto;
+  color:#FFF;
+  margin-bottom: 30px;
+
+  @include small-desktop{
+    font-size: 3.4vw;
+    margin-bottom: 2vw;
+  }
+
+  @include tablet{
+    font-size: 8vw;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  @include mobile{
+    font-size: 10.5vw;
+  }
+}
+
+.header-intro-text{
+  font-family: 'Open Sans';
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color:#FFF;
+  margin-bottom: 10px;
+}
+
+.header-intro-text span{
+  font-weight: 900;
+}
+
+.header-intro-text{
+  color:#FFF;
+}

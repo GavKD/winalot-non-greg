@@ -1,0 +1,39 @@
+.back-button-con{
+  position:fixed;
+  height:50px;
+  margin-top:0px;
+  z-index: 99;
+
+  @include tablet {
+    position:relative;
+    margin-top:0px;
+  }
+}
+
+.back-form{
+  background-color: $theme-sub-colour;
+}
+
+.back-button{
+  width:70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+  position:absolute;
+  left:0px;
+  height:40px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top:10px;
+}
+
+.back-button-article{
+  background-color:$theme-sub-colour;
+  background-image:url('../images/back-arrow-white.png');
+}
+
+.back-button-form{
+  background-color:#FFF;
+  background-image:url('../images/back-arrow-green.png');
+}
+

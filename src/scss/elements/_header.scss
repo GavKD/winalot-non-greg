@@ -1,0 +1,152 @@
+header{
+  width:100%;
+  position:fixed;
+  top: 0px;
+  z-index: 999999;
+
+  @include tablet{
+    position:relative;
+  }
+}
+
+.header-outer{
+  position:relative;
+  width: 100%;
+  background:#FFF;
+  height:64px;
+  box-shadow: 0 0px 5px 0px #DBDBDB;
+
+  @include tablet{
+    height:64px;
+  }
+
+}
+
+.header-inner{
+  position:relative;
+  max-width: 92%;
+  width:100%;
+  margin:auto;
+}
+
+.header-logo-mobile{
+  font-family: Tinos;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: auto;
+  padding-top: 0.2rem;
+  padding-bottom: 0.6rem;
+  line-height: 1.2rem;
+  display:none;
+
+  @include tablet{
+    display:block;
+  }
+
+  @include mobile{
+    padding-top: 0.4rem;
+  }
+
+}
+
+.header-logo-desktop{
+  font-family: Tinos;
+  font-size: 1.9rem;
+  line-height: 1.9rem;
+  font-weight: 700;
+  text-align: center;
+  margin: auto;
+  padding-top: 0.8rem;
+  display:block;
+
+  @include tablet{
+    display:none;
+  }
+
+  @include mobile{
+    padding-top: 0.4rem;
+  }
+
+}
+
+.header-logo a{
+  color:$theme-colour;
+  margin:auto;
+  text-decoration: none;
+
+}
+
+.header-advertisement-text-con{
+  @include tablet{
+    width: 100%;
+    height:14px;
+    background:#f4f4f4;
+  }
+}
+
+.header-advertisement-text
+{
+  text-transform: uppercase;
+  position: absolute;
+  font-family: 'Open Sans';
+  right: calc(4% + 140px);
+  top: 20px;
+  color: #000;
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+
+  @include small-desktop{
+    font-size: 0.5rem;
+  }
+
+  @include tablet{
+    right: calc(4% + 100px);
+    top: 12px;
+    position:relative;
+    text-align: center;
+    top: -5px;
+    right:auto;
+  }
+}
+
+.winalot-logo{
+  position:absolute;
+  top: 0px;
+  right: 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width:112px;
+  height:80px;
+  background-image:url('../images/winalot-logo-jun20.png');
+
+  @include tablet{
+    width:86px;
+    height:61px;
+  }
+}
+
+.immediate-logo{
+  position:absolute;
+  top: 15px;
+  left: 0px;
+  background-size: contain;
+  width:91px;
+  height:35px;
+  background-image:url('../images/immediate-media.png');
+  background-repeat: no-repeat;
+
+  @include tablet{
+    top: 12px;
+    width:70px;
+    height:27px;
+  }
+}
+
+.not-found {
+  margin: 84px 10px 10px 10px;
+
+  @include tablet{
+    margin: 14px 10px 10px 10px;
+  }
+}

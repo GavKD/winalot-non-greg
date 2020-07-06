@@ -1,0 +1,38 @@
+// // Media queries
+// Media queries
+
+@mixin small-desktop {
+  @media only screen and (max-width: #{$max-desktop-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin small-mobile {
+  @media screen and (max-width: #{$small-mobile-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+// @mixin medium-desktop {
+//   @media only screen and (min-width: 1221px) and (max-width: 1450px) {
+//     @content;
+//   }
+// }
+
+// @mixin large-desktop {
+//   @media only screen and (min-width: 1451px) {
+//     @content;
+//   }
+// }

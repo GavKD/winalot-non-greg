@@ -1,0 +1,437 @@
+
+.homepage-container{
+  position: relative;
+  margin:auto;
+  max-width:1200px;
+}
+
+.homepage-background{
+  background:#D6E0DD;
+
+  @include tablet{
+    background:#FFF;
+  }
+}
+
+.story-hub-con{
+
+  margin-left: 40%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: #FFF;
+  
+  @include tablet{
+    margin-left:0px;
+    width:100%;
+    clear: both;
+  }
+
+}
+
+.home-grid
+{
+  width:100%;
+  display:inline-block;
+  padding:5%;
+  padding-top: 100px;
+  margin: auto;
+
+  @include tablet {
+    position:relative;
+    width:100%;
+    margin: auto;
+    padding-top:10px;
+    padding-top: 6vw;
+  } 
+
+  @include mobile{
+    max-width: 100%;
+    padding:3%;
+  }
+}
+
+.tile{
+  position:relative;
+  border-radius: $tile-border-radius;
+  box-shadow: 0 10px 10px 0px #DBDBDB;
+  display: block;
+  margin: auto;
+  width:30%;
+  height:22vw;
+  margin-bottom:20px;
+  cursor: pointer;
+  float:left;
+  margin:1.5%;
+
+  max-width: 190px;
+  max-height: 264px;
+  a{
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    text-decoration: none;
+    color:inherit;
+  }
+
+  @include tablet {
+
+    height:38vw;
+    max-width: none;
+    max-height: none;
+  }
+
+  @include mobile {
+
+    width:47%;
+    height:60vw;
+  }
+}
+
+.tile-large{
+  
+  @include mobile {
+
+    width:97%;
+    height:115vw;
+    margin-bottom:15px;
+  }
+}
+
+.tile-large .cell-background{
+  @include mobile {
+
+    height:90vw;
+  }
+}
+
+.tile-spon .cell-background{
+  background-size:contain;
+  background-color: $theme-colour;
+  background-position: center;
+
+}
+
+.tile-large .text-headline, .tile-large .text-subline{
+  @include mobile {
+
+    font-size:1.1rem;
+    line-height:1.5rem;
+  }
+}
+
+.tile-large .cell-text{
+
+  @include mobile {
+    height:25vw;
+  }
+}
+
+.cell-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+  width:100%;
+  height: 16vw;
+  max-width: 190px;
+  max-height: 190px;
+
+  @include tablet {
+    width:100%;
+    height: 27vw;
+    max-width: none;
+    max-height: none;
+  }
+
+  @include mobile {
+    width:100%;
+    height:43vw;
+  }
+}
+
+.cell-text{
+  background:white;
+  overflow:hidden;
+  height: 6vw;
+  margin:0;
+  padding: 5px;
+  border-bottom-right-radius: $tile-border-radius;
+  border-bottom-left-radius: $tile-border-radius;
+  padding-left: 10px;
+
+  max-height: 75px;
+
+  @include small-desktop{
+    padding: 10px;
+  }
+
+  @include tablet {
+    padding: 8px;
+    height: 11vw;
+    max-height: none;
+  }
+
+  @include mobile {
+    height:17vw;
+  }
+}
+
+.spon-text{
+  background:$theme-sub-colour;
+}
+
+.tile-spon a{
+  text-decoration: none;
+}
+
+.tile-spon .text-headline{
+  color:$theme-colour;
+}
+
+.tile-spon .text-headline span{
+  color:#FFF;
+}
+
+.text-headline
+{
+  font-family: 'Open Sans';
+  color:#929295;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  overflow-wrap: normal;
+  font-weight: 400;
+
+  @include small-desktop{
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+  }
+
+  @include tablet{
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  @include mobile{
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  @include small-mobile{
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+  }
+}
+
+.text-subline
+{
+  font-family: 'Open Sans';
+  color:#929295;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  overflow-wrap: normal;
+  font-weight: 400;
+  float:left;
+
+  @include small-desktop{
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+  }
+
+  @include tablet{
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  @include mobile{
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  @include small-mobile{
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+  }
+}
+
+.single-column .text-headline{
+  @include mobile{
+    // font-size: 1.2rem;
+    // line-height: 1.2rem;
+  }
+}
+
+.text-headline span{
+  color:#8AA29C;
+  font-weight: 600;
+}
+
+.story-filter{
+
+  display:none;
+
+  @include mobile{
+    display:block;
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+    padding: 6vw;
+    padding-bottom:0px;
+  }
+}
+
+.filter-label{
+  font-family: Tinos;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  margin: auto;
+  color:$theme-sub-colour;
+  float:left;
+  padding:10px;
+
+  @include small-mobile{
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+  }
+}
+
+.filter-label-buttons{
+  float:right;
+}
+
+.filter{
+  position:relative;
+  width:40px;
+  height:40px;
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+.filter-large{
+  background-image:url('../images/large-tiles.png');
+}
+
+.filter-large-selected{
+  background-image:url('../images/large-tiles-selected.png');
+}
+
+.filter-large-selected:after,.filter-small-selected:after {
+  content:"\A";
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background: $theme-colour;
+  display:block;
+  margin:auto;
+  position:absolute;
+  bottom:-8px;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+.filter-small{
+  background-image:url('../images/small-tiles.png');
+}
+
+.filter-small-selected{
+  background-image:url('../images/small-tiles-selected.png');
+}
+
+.share-story{
+  background-color:$theme-colour;
+  background-image:url('../images/forward-arrow-green.png');
+  background-repeat: no-repeat;
+  background-size:18px;
+  background-position:50% 91%;
+
+}
+
+.tile-large.share-story{
+  
+  @include mobile{
+    background-size:35px;
+    background-position:50% 89%;
+  }
+}
+
+.share-blanket{
+  width:100%;
+  height:100%;
+  position: absolute;
+}
+
+.share-story-text{
+  font-family: Tinos;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  color: #FFF;
+  text-align: center;
+  margin-top: 35px;
+  padding-left:20px;
+  padding-right:20px;
+
+  @include small-desktop{
+    font-size: 2vw;
+    line-height: 2.3vw;
+    margin-top: 25px;
+    padding-left:10px;
+    padding-right:10px;
+  }
+
+  @include tablet{
+    margin-top: 5vw;
+    font-size: 3.8vw;
+    line-height: 4.5vw;
+  }
+
+  @include mobile{
+    margin-top: 7vw;
+    font-size: 6vw;
+    line-height: 7vw;
+  }
+
+}
+
+.tile-large .share-story-text{
+
+  @include mobile{
+    margin-top: 22vw;
+    font-size: 10vw;
+    line-height: 11vw;
+  }
+
+}
+
+.dom{
+  background:#F3B943;
+  color: #FFF;
+  span{
+    color: #FFF;
+  }
+}
+.domIcon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 4vw;
+  max-width: 190px;
+  max-height: 25px;
+  background-color: #F3B943;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  @include tablet {
+    max-width: none;
+    max-height: none;
+  }
+  @include mobile{
+    height: 25px;
+  }
+}
